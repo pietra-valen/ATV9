@@ -1,0 +1,26 @@
+programa
+{
+	funcao inicio()
+	{
+		real area
+		inteiro litros
+		inteiro latas
+		real preco_total
+
+		escreva("Digite o tamanho da area a ser pintada (em metros quadrados): ")
+		leia(area)
+		
+		litros = area / 3
+
+		se (litros % 18 == 0) {
+			latas = (litros / 18)}
+		
+		senao {
+			latas = (litros / 18) + 1}
+		
+		preco_total = latas * 480
+
+		escreva("Quantidade de latas de tinta a serem compradas: ", latas, "\n")
+		escreva("Preco total: ", preco_total)
+	}
+}
